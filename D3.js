@@ -217,14 +217,13 @@ if (crewMass < 500) {
 */
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
-  let naGender = starWarsCharacters[i];
-  if (naGender.gender === "n/a") {
-    naGender.gender = "robot";
+  let character = starWarsCharacters[i];
+  if (character.gender === "n/a") {
+    character.gender = "robot";
   }
-  i++;
 }
 
-console.log(starWarsCharacters[2]);
+console.log(starWarsCharacters);
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
