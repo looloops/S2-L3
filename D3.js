@@ -245,3 +245,9 @@ console.log(charactersNames);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+const maxNum = starWarsCharacters.length;
+const randomInt = Math.floor(Math.random() * maxNum);
+const rC = starWarsCharacters[randomInt]; //rC = randomCharacters
+console.log(
+  `Hello I'm ${rC.name}, born in ${rC.birth_year}. My eyes are ${rC.eye_color}, my hair ${rC.hair_color}. I can see you from the height of my ${rC.height}cm. Can I fly with a ${rC.mass} mass? Ah I forgot! I'm a ${rC.gender} and my skin color seems to be ${rC.skin_color}. See you soon in the universe!`
+);
